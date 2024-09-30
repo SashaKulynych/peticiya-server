@@ -21,4 +21,6 @@ server.listen(process.env.PORT || 5000, () => {
   console.log(`Server has started.`)
 });
 
+server.setTimeout(500000);
+
 module.exports = app;
