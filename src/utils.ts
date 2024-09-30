@@ -1,5 +1,5 @@
 
-import { IData } from './router/data';
+import { IData } from './api/data';
 
 const fs = require('fs');
 
