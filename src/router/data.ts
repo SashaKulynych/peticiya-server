@@ -40,6 +40,8 @@ export const getData = async (data: {
 export default (router: any) => {
     router.get(link, (req: any, res: any) => {
         try {
+            res.send({ success: true, data: [] });
+            return 
             const arr: IData = [...cachedData];
             let pageNumber = 1;
             const onFinish = () => {
