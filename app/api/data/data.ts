@@ -1,4 +1,4 @@
-import { cachedData, setData } from "../utils";
+import { cachedData, setData } from "../../utils";
 
 import axios from 'axios'
 

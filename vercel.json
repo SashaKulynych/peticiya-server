@@ -7,7 +7,7 @@
     }
   ],
   "functions": {
-    "src/api/data.ts": {
+    "app/api/**/data.ts": {
         "maxDuration": 60
       }
   }

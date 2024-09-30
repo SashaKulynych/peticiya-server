@@ -3,8 +3,8 @@ const express = require('express')
 const cors = require('cors')
 const bodyParser = require('body-parser')
 
-import router from './src/api'
-import { getData } from './src/utils'
+import router from './app/api/data'
+import { getData } from './app/utils'
 
 const app = express();
 
