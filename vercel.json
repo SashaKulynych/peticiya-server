@@ -1,15 +1,15 @@
 {
-  "version": 2,
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "index.ts"
-    }
-  ],
-  "functions": {
-    "app/api/**/*.ts": {
-        "memory": 1024,
-        "maxDuration": 60
+    "version": 2,
+    "builds": [
+      {
+        "src": "index.ts",
+        "use": "@vercel/node"
       }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "index.ts"
+      }
+    ]
   }
-}
