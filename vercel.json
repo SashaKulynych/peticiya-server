@@ -7,8 +7,8 @@
     }
   ],
   "functions": {
-    "app/router/**/*": {
-      "maxDuration": 60
-    }
+    "app/api/**/*": {
+        "maxDuration": 60
+      }
   }
 }
