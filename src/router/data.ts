@@ -51,6 +51,7 @@ export default (router: any) => {
                 petitionId: 234334,
                 pageNumber
             });
+            console.log({ pageNumber, response })
             if (response) {
                 const dom = (new jsdom.JSDOM(response.table_html)).window.document;
                 let finish = false;
