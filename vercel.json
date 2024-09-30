@@ -7,7 +7,7 @@
     }
   ],
   "functions": {
-    "*": {
+    "app/router/**/*": {
       "maxDuration": 60
     }
   }
