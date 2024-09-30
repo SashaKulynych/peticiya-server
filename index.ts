@@ -20,3 +20,5 @@ server.listen(process.env.PORT || 5000, () => {
   getData()
   console.log(`Server has started.`)
 });
+
+module.exports = app;
