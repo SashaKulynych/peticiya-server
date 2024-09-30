@@ -7,7 +7,7 @@
     }
   ],
   "functions": {
-    "src/router/*": {
+    "src/router/data.ts": {
         "maxDuration": 60
       }
   }
