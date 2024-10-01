@@ -4,7 +4,7 @@ import axios from 'axios'
 
 import jsdom from 'jsdom'
 
-const link = '/getData'
+const link = '/api/getData'
 
 export interface IDataResponse {
     pag_html: string
