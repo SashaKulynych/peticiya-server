@@ -1,15 +1,13 @@
+import { IData } from "./api/data/data";
 
-import { IData } from './api/data';
 
 const fs = require('fs');
-
-export const host = process.env.NODE_ENV !== 'production' ? 'http://localhost:5000/' : 'https://intense-sands-29465.herokuapp.com/'
 
 export let cachedData: IData = []
 
 export const getData = async () => {
     try {
-        const file = JSON.parse(fs.readFileSync('./src/sources/data.json', 'utf8'));
+        const file = JSON.parse(fs.readFileSync('./app/sources/data.json', 'utf8'));
         cachedData = file
         return file
     } catch (e) {

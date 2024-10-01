@@ -1,4 +1,4 @@
-import data from '.'
+import data from './data'
 
 const express = require('express');
 const router = express.Router();
