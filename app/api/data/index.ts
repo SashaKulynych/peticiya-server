@@ -7,7 +7,7 @@ const router = express.Router();
 data(router)
 
 router.get('/', (req: any, res: any) => {
-    res.end({ info: 'server is up and running', cachedData });
+    res.end('server is up and running');
 });
 
 export default router;
