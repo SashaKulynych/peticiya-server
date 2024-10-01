@@ -5,13 +5,14 @@ const fs = require('fs');
 
 export let cachedData: IData = []
 
-export const getData = async () => {
+export const getData = () => {
     try {
         const file = JSON.parse(fs.readFileSync('./app/sources/data.json', 'utf8'));
         cachedData = file
         return file
     } catch (e) {
         console.log({ e })
+        return 'Error'
     }
 }
 

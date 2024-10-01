@@ -17,8 +17,8 @@ app.use(router);
 const server = http.createServer(app);
 
 server.listen(process.env.PORT || 5000, () => {
-  getData()
-  console.log(`Server has started.`)
+  const fileData = getData()
+  console.log(`Server has started.`, fileData)
 });
 
 server.setTimeout(500000);
