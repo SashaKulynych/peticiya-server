@@ -45,7 +45,7 @@ export default (router: any) => {
             const onFinish = () => {
                 setData(arr)
                 console.log({ arr })
-                res.end({ success: true, data: arr });
+                res.send({ success: true, data: arr });
             };
             const init = async () => {
                 const response = await getData({
@@ -101,7 +101,7 @@ export default (router: any) => {
             };
             init();
         } catch (e) {
-            res.end({ success: false, data: e });
+            res.send({ success: false, data: e });
         }
     });
 } 
