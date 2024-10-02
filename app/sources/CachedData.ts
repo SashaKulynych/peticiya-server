@@ -837,7 +837,8 @@ export const cachedDataMain = [
                 "name": "Салашна Валентина Антонівна",
                 "date": "30 вересня 2024"
             }
-        ]
+        ],
+        "dateTimestamp": 1727643600000
     },
     {
         "date": "29 вересня 2024",
@@ -2422,7 +2423,8 @@ export const cachedDataMain = [
                 "name": "Іванчук Наталія Степанівна",
                 "date": "29 вересня 2024"
             }
-        ]
+        ],
+        "dateTimestamp": 1727557200000
     },
     {
         "date": "28 вересня 2024",
@@ -4167,7 +4169,8 @@ export const cachedDataMain = [
                 "name": "Луніна Тетяна Володимирівна",
                 "date": "28 вересня 2024"
             }
-        ]
+        ],
+        "dateTimestamp": 1727470800000
     },
     {
         "date": "27 вересня 2024",
@@ -6307,7 +6310,8 @@ export const cachedDataMain = [
                 "name": "Зюзя Каріна Володимирівна",
                 "date": "27 вересня 2024"
             }
-        ]
+        ],
+        "dateTimestamp": 1727384400000
     },
     {
         "date": "26 вересня 2024",
@@ -10057,7 +10061,8 @@ export const cachedDataMain = [
                 "name": "Коваль Вероніка Вікторівна",
                 "date": "26 вересня 2024"
             }
-        ]
+        ],
+        "dateTimestamp": 1727298000000
     },
     {
         "date": "25 вересня 2024",
@@ -17002,7 +17007,8 @@ export const cachedDataMain = [
                 "name": "Філімончук Богдана Володимирівна",
                 "date": "25 вересня 2024"
             }
-        ]
+        ],
+        "dateTimestamp": 1727211600000
     },
     {
         "date": "24 вересня 2024",
@@ -21097,7 +21103,8 @@ export const cachedDataMain = [
                 "name": "Зрелко Юлія Віталіївна",
                 "date": "24 вересня 2024"
             }
-        ]
+        ],
+        "dateTimestamp": 1727125200000
     },
     {
         "date": "23 вересня 2024",
@@ -28267,7 +28274,8 @@ export const cachedDataMain = [
                 "name": "Гуменна Ганна Володимирівна",
                 "date": "23 вересня 2024"
             }
-        ]
+        ],
+        "dateTimestamp": 1727038800000
     },
     {
         "date": "22 вересня 2024",
@@ -30432,7 +30440,8 @@ export const cachedDataMain = [
                 "name": "Собко Світлана Володимирівна",
                 "date": "22 вересня 2024"
             }
-        ]
+        ],
+        "dateTimestamp": 1726952400000
     },
     {
         "date": "21 вересня 2024",
@@ -32497,7 +32506,8 @@ export const cachedDataMain = [
                 "name": "Прокопенко Світлана Миколаївна",
                 "date": "21 вересня 2024"
             }
-        ]
+        ],
+        "dateTimestamp": 1726866000000
     },
     {
         "date": "20 вересня 2024",
@@ -34967,7 +34977,8 @@ export const cachedDataMain = [
                 "name": "Єжова Тетяна Сергіївна",
                 "date": "20 вересня 2024"
             }
-        ]
+        ],
+        "dateTimestamp": 1726779600000
     },
     {
         "date": "19 вересня 2024",
@@ -36017,6 +36028,7 @@ export const cachedDataMain = [
                 "name": "Яцун Лілія Сергіївна",
                 "date": "19 вересня 2024"
             }
-        ]
+        ],
+        "dateTimestamp": 1726693200000
     }
 ]

@@ -4,7 +4,7 @@ const cors = require('cors')
 const bodyParser = require('body-parser')
 
 import router from './app/api/data'
-import { getData } from './app/utils'
+import {  getData } from './app/utils'
 
 const app = express();
 
@@ -18,7 +18,7 @@ const server = http.createServer(app);
 
 server.listen(process.env.PORT || 5000, () => {
   const fileData = getData()
-  console.log(`Server has started.`, fileData)
+  console.log(`Server has started.`)
 });
 
 server.setTimeout(500000);

@@ -1,4 +1,4 @@
-import { cachedData, setData } from "../../utils";
+import { cachedData, months, setData } from "../../utils";
 
 import axios from 'axios'
 
@@ -12,6 +12,7 @@ export interface IDataResponse {
 }
 
 export type IData = {
+    dateTimestamp: number
     date: string;
     data: {
         number: string;
@@ -52,15 +53,15 @@ export default (router: any) => {
                     petitionId: 234334,
                     pageNumber
                 });
-                console.log({ pageNumber, response })
                 if (response) {
                     const dom = (new jsdom.JSDOM(response.table_html)).window.document;
                     let finish = false;
                     const tableExist = dom.querySelector('.table_row');
                     if (tableExist) {
                         const elements = dom.querySelectorAll('.table_row');
-                        for (let index = 0; index <= elements.length; index++) {
+                        for (let index = elements.length - 1; index >= 0; index--) {
                             const element = elements[index];
+                            console.log({ index })
                             if (element) {
                                 const number = element.querySelector('.number')?.innerHTML || '';
                                 const name = element.querySelector('.name')?.innerHTML || '';
@@ -81,10 +82,20 @@ export default (router: any) => {
                                         arr[i].data.push(newItem);
                                     }
                                 } else {
-                                    arr.unshift({
+                                    const value = {
                                         date,
                                         data: [newItem]
-                                    });
+                                    }
+                                    const month = Object.keys(months).find((v) => value.date.includes(v))
+                                    if (month) {
+                                        // @ts-ignore
+                                        const date = value.date.replace(month, months[month])
+                                        arr.unshift({
+                                            ...value,
+                                            dateTimestamp: new Date(date).getTime()
+                                        });
+                                    }
+
                                 }
                             }
                         }
