@@ -12,6 +12,8 @@ export interface IDataResponse {
 }
 
 export type IData = {
+    isFinished?: boolean
+    total?: number
     dateTimestamp: number
     date: string;
     data: {
@@ -44,9 +46,19 @@ export default (router: any) => {
             const arr: IData = [...cachedData];
             let pageNumber = 1;
             const onFinish = () => {
+                console.log(JSON.parse(JSON.stringify(arr)))
+                const newArr = [...arr].sort((a, b) => a.dateTimestamp - b.dateTimestamp).reverse()
+                for (let i = 0; i < newArr.length; i++) {
+                    newArr[i].isFinished = ![0, 1, 2].includes(i)
+                    newArr[i].total = newArr[i].data.length
+                }
                 setData(arr)
-                console.log({ arr })
-                res.send({ success: true, data: arr });
+                res.send({
+                    success: true, data: newArr.map((v) => ({
+                        ...v,
+                        data: [],
+                    }))
+                });
             };
             const init = async () => {
                 const response = await getData({
@@ -61,7 +73,6 @@ export default (router: any) => {
                         const elements = dom.querySelectorAll('.table_row');
                         for (let index = elements.length - 1; index >= 0; index--) {
                             const element = elements[index];
-                            console.log({ index })
                             if (element) {
                                 const number = element.querySelector('.number')?.innerHTML || '';
                                 const name = element.querySelector('.name')?.innerHTML || '';
